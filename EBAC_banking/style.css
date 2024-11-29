@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center; /* Centraliza horizontal e verticalmente */
+    height: 100vh;
+  }
+  
+  .conteiner {
+    width: 500px;
+    height: 500px;
+    background-color: rgba(0, 209, 0, 0.171);
+    border-radius: 50px;
+  }
+
+  .tittle {
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  form {
+    display: grid;
+    gap: 10px; /* Espaçamento entre os inputs */
+    max-width: 300px; /* Largura máxima do formulário */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-75%, -50%);
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    width: 450px;
+    border: none;
+    border-radius: 20px;
+  }
+
+  textarea {
+    resize: none;
+    border: none;
+    border-radius: 20px;
+  }
+
+  input:focus, textarea:focus {
+    outline-color: rgb(16, 160, 16);
+    border-radius: 20px;
+}
+
+  button {
+    padding: 10px;
+    background-color: rgb(19, 207, 19);
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+
+  button:hover {
+    background-color: rgb(24, 168, 24);
+  }
+
+  .success-message {
+    background-color: rgb(24, 168, 24);
+    padding: 16px;
+    color: white;
+    display: none;
+  }
+
+  .error-message {
+    padding: 8px;
+    background-color: red;
+    color: white;
+    margin-bottom: 8px;
+    font-size: 12px;
+    border-radius: 20px;
+    display: none;
+  }
+
+  input.error {
+    color: red;
+    border-color: red;
+    outline-color: red;
+  }
+
+  
+  
+  
+  
+  
