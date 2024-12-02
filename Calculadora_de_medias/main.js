@@ -31,7 +31,7 @@ function adicionaLinha() {
         let linha = '<tr>'
         linha += `<td>${inputNomeAtividade.value}</td>`
         linha += `<td>${inputNotaAtividade.value}</td>`
-        linha += `<td>${inputNotaAtividade.value >= 7 ? imgAprovado : imgReprovado}</td>`
+        linha += `<td>${inputNotaAtividade.value >= 7 ? imgAprovado : imgReprovado}</td>` // ? significa if e : else
         linha += `</tr>`
         
         linhas += linha 
@@ -51,7 +51,7 @@ function atualizaTabela() {
 function atualizaMediaFinal() {
     const mediaFinal = calculaMedia()
 
-    document.getElementById('media-final-valor').innerHTML = mediaFinal
+    document.getElementById('media-final-valor').innerHTML = mediaFinal.toFixed(2) //limita as casas decimais
     document.getElementById('media-final-resultado').innerHTML = mediaFinal >= notaMinima ? spanAprovado : spanReprovado
 
 }
