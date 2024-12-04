@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.conteiner {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    max-width: 650px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    font-size: 20px;
+}
+
+button {
+    background-color: rgb(18, 190, 26);
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(24, 155, 30);
+}
+
+table {
+    margin-top: 20px;
+    width: 100%;
+}
+
+table th {
+    border-bottom: 2px solid black;
+    padding: 16px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+table td {
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.342);
+}
