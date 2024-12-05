@@ -3,8 +3,8 @@ $(document).ready(function() {
         e.preventDefault()
 
         const nomeTarefa = $('#nome-tarefa').val()
-        const novoItem = $('#lista').append(`<li><a href="#">${nomeTarefa}</a></li>`)
-        //$(`<a href="#">${nomeTarefa}</a>`).appendTo(novoItem)
+        $('#lista').append(`<li><a href="#">${nomeTarefa}</a></li>`)
+        
     })
 
     $(document).on('click','li', function() {
