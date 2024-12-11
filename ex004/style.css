@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+}
+
+.conteiner {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .conteiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background-color: rgb(46, 76, 209);
+    padding: 16px 0;
+}
+
+header h1 {
+    color: white;
+    font-style: italic;
+}
+
+nav li {
+    float: right;
+    list-style: none;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav li a:hover {
+    color: rgb(8, 17, 59);
+}
+
+.sobre-loja {
+    margin-top: 32px;
+}
+
+.sobre-loja article img {
+    width: 300px;
+    height: 200px;
+    margin-right: 32px;
+}
+
+.sobre-loja article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-loja h2 {
+    color: rgb(46, 76, 209);
+    font-style: italic;
+    border-bottom: 3px solid rgb(46, 76, 209);
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+}
