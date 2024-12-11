@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        li {
+            width: 100%;
+            list-style: none;
+        }
+
+        li img {
+            width: 200px;
+            height: 200px;
+        }
+
+        @media screen and (min-width: 1366px) {
+            div {
+                max-width: 33%;
+                float: left;
+            }
+        }
+
+        @media screen and (orientation: portrait) and (max-width: 640px) {
+            body {
+                background-color: red;
+            }
+        }
+
+        @media print {
+            h3 {
+                color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/2022-09-07_Desfile_C%C3%ADvico-Militar_por_ocasi%C3%A3o_das_Comemora%C3%A7%C3%B5es_do_Bicenten%C3%A1rio_da_Independ%C3%AAncia_do_Brasil_-_52341366768_%28cropped%29.jpg" alt="Bolsonaro">
+            <h3>Bolsonaro Presidente 2026</h3>
+        </li>
+        <li>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/2022-09-07_Desfile_C%C3%ADvico-Militar_por_ocasi%C3%A3o_das_Comemora%C3%A7%C3%B5es_do_Bicenten%C3%A1rio_da_Independ%C3%AAncia_do_Brasil_-_52341366768_%28cropped%29.jpg" alt="Bolsonaro">
+            <h3>Bolsonaro Presidente 2026</h3>
+        </li>
+        <li>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/2022-09-07_Desfile_C%C3%ADvico-Militar_por_ocasi%C3%A3o_das_Comemora%C3%A7%C3%B5es_do_Bicenten%C3%A1rio_da_Independ%C3%AAncia_do_Brasil_-_52341366768_%28cropped%29.jpg" alt="Bolsonaro">
+            <h3>Bolsonaro Presidente 2026</h3>
+        </li>
+    </ul>
+</body>
+</html>
