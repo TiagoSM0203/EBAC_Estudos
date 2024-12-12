@@ -135,6 +135,8 @@ section .produtos {
     }
     
     .tenis img {
+        width: 100%;
+        margin: auto;
         box-shadow: 10px 10px 35px -15px rgba(0,0,0,0.54);
     }
 
@@ -160,9 +162,7 @@ section .produtos {
     }
 
     .produtos {
-        display: grid;
-        grid-template-columns: 80%;
-        row-gap: 3%;
+        display: block;
     }
 
     .tenis button {
@@ -176,11 +176,13 @@ section .produtos {
 
     .tenis img {
         width: 100%;
+        margin: auto;
         box-shadow: 10px 10px 35px -15px rgba(0,0,0,0.54);
     }
 
     .tenis {
         display: grid;
+        margin-bottom: 24px;
     }
 
 }
