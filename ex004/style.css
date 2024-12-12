@@ -165,7 +165,7 @@ section .produtos {
         display: block;
     }
 
-    .produto {
+    .produtos {
         display: grid;
         grid-template-columns: 80%;
         row-gap: 3%;
