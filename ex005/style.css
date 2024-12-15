@@ -1,0 +1,59 @@
+.imgs {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    border-radius: 50px;
+    background-size: 60%;
+    height: 50px;
+    width: 50px;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 50px;
+}
+
+.titulo-planos {
+    margin: 50px;
+}
+
+.titulo-planos h1 {
+    font-weight: bolder;
+}
+
+.deluxe {
+    background-color: rgb(36, 36, 36);
+}
+
+.deluxe h2 {
+    color: rgb(255, 208, 0);
+}
+
+.deluxe p {
+    color: white;
+}
+
+.extra {
+    background-color: rgb(255, 208, 0);
+}
+
+.extra h2,
+.deluxe h2,
+.essencial h2,
+.mensalidade {
+    font-weight: bold;
+}
+
+.essencial {
+    background-color: white;
+}
+
+
+
+
+
+
+
