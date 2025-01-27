@@ -7,6 +7,4 @@ namespace casting {
     })
 
     let nome: string = 35 as unknown as string
-    nome.
-    parseInt()
 }
