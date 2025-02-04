@@ -9,6 +9,7 @@ function App() {
   const [nomeUsuario, setNomeUsuario] = useState('');
   return(
     <div>
+      <label htmlFor="nome">Digite um usuario: </label>
       <input type="text" onBlur={(e) => setNomeUsuario(e.target.value)}/>
 
       {nomeUsuario.length > 4 && (
