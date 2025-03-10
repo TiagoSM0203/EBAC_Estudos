@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Braschlor - Quimica Aliada a Natureza</title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="nav-container">
+            <div class="nav-content">
+                <img src="assets/img/logo_braschlor.png" class="logo" alt="Logo">
+                <nav class="menu">
+                    <div class="menu-links">
+                        <a href="index.html">Home</a>
+                        <a href="empresa.html">Quem somos</a>
+                        <a href="produtos.html">Produtos</a>
+                        <a href="contato.html">Parceiros</a>
+                    </div>
+                </nav>
+                <button type="button" class="botao-contato">Entre em contato</button>
+                <div class="burguer-content">
+                    <i class="fa-solid fa-bars burguer"></i>
+                </div>
+            </div>
+            <div class="mobile-menu">
+                <nav class="mobile-nav">
+                    <a href="index.html">Home</a>
+                    <a href="empresa.html">Quem somos</a>
+                    <a href="produtos.html">Produtos</a>
+                    <a href="contato.html">Parceiros</a>
+                    <button class="botao-contato mobile">Entre em contato</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+            <div class="hero">
+            <div class="shapes-animados">
+                <i class="fa-solid fa-leaf shape shape-1"></i>
+                <i class="fa-solid fa-flask-vial shape shape-2"></i>
+            </div>
+            <div class="hero-content">
+                <h1 class="hero-titulo">Química aliada a natureza!</h1>
+                <h3 class="hero-subtitulo">Produtos de limpeza biodegradáveis e sustentáveis</h3>
+                <p class="hero-p">Aqui você encontra tudo o que precisa para uma limpeza impecável: detergentes poderosos, desinfetantes eficazes, água sanitária de qualidade e muito mais! Nossos produtos garantem proteção, praticidade e o melhor custo-benefício para o seu dia a dia.</p>
+                <p class="hero-p"><p class="hero-p">Não perca tempo! Fale agora mesmo com um de nossos vendedores e garanta os melhores produtos para sua limpeza.</p>
+            </p>
+
+                <div class="botao-hero"><button class="botao-contato-hero">Fale ja com um de nossos vendedores!</button></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="quemsomos">
+        <div class="container-quemsomos">
+                <div class="quemsomos-img">
+                    <img src="assets/img/quemsomos.png" class="quemsomos-img" alt="Quem somos">
+                </div>
+                <div class="quemsomos-content">
+                    <h2 class="quemsomos-titulo">Quem somos?</h2>
+                    <p class="quemsomos-p">A Braschlor é uma empresa que atua no mercado de produtos de limpeza. Nossos produtos são desenvolvidos com tecnologia de ponta e matérias-primas de qualidade, garantindo eficiência e segurança para você e sua família.</p>
+                    <p class="quemsomos-p">Nossa missão é oferecer soluções inovadoras e sustentáveis para a limpeza doméstica e profissional, contribuindo para a preservação do meio ambiente e o bem-estar de todos. Venha fazer parte dessa história e descubra o poder da química aliada à natureza!</p>
+                    <div class="quemsomos-botao-content">
+                        <a class="quemsomos-botao" href="#">Saiba Mais</a>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <div class="container-produtos">
+        <div class="produtos_ad">
+            <h1 class="produtos-title">Conheca nossos produtos</h1>
+            <p class="produtos-p">Produtos de Limpeza de Alta Qualidade para um Ambiente Impecável e cheiroso!</p>
+        </div>
+        <div class="produtos_section">
+            <div class="produtos">
+                <div class="produtos-item active" onclick="mostrarMenu(0)"><i class="fa-solid fa-jug-detergent"></i> Lavanderia</div>
+                <div class="produtos-item" onclick="mostrarMenu(1)"><i class="fa-solid fa-sink"></i> Detergentes</div>
+                <div class="produtos-item" onclick="mostrarMenu(2)"><i class="fa-solid fa-bacteria"></i> Desinfetantes</div>
+                <div class="produtos-item" onclick="mostrarMenu(3)"><i class="fa-solid fa-car-side"></i> Automoveis</div>
+                <div class="produtos-item" onclick="mostrarMenu(4)"><i class="fa-solid fa-bottle-water"></i> Limpadores Perfumados</div>
+            </div>
+            <div class="produtos-content">
+                <div class="btn"><i class="prev fa-solid fa-arrow-left"></i></div>
+                <div class="menu-options show" id="produto-0">
+                    <div class="option">
+                        <img class="produto-img" src="https://placehold.co/200x200" alt="produto">
+                        <h3 class="produto-title">Sabao Liquido Azul</h3>
+                    </div>
+                    <div class="option">
+                        <img class="produto-img" src="https://placehold.co/200x200" alt="produto">
+                        <h3 class="produto-title">Sabao Liquido Verde</h3>
+                    </div>
+                    <div class="option">
+                        <img class="produto-img" src="https://placehold.co/200x200" alt="produto">
+                        <h3 class="produto-title">Sabao Liquido Coco</h3>
+                    </div>
+                    <div class="option">
+                        <img class="produto-img" src="https://placehold.co/200x200" alt="produto">
+                        <h3 class="produto-title">Agua Sanitária</h3>
+                        <p class="produto-p">Produto versátil para limpeza e desinfecção. Remove manchas, combate fungos e bactérias, deixando ambientes limpos e protegidos. Ideal para roupas brancas e superfícies.</p>
+                    </div>
+                    <div class="option">
+                        <img class="produto-img" src="https://placehold.co/200x200" alt="produto">
+                        <h3 class="produto-title">Cloro Liquido 6%</h3>
+                        <p class="produto-p">Poderoso para limpeza pesada. Elimina germes, bactérias e odores, garantindo higienização completa de ambientes e superfícies. Uso doméstico e profissional.</p>
+                    </div>
+                    <div class="option">
+                        <img class="produto-img" src="https://placehold.co/200x200" alt="produto">
+                        <h3 class="produto-title">Alvejante Azul</h3>
+                        <p class="produto-p">Brilho e limpeza para suas roupas. Fórmula especial que remove manchas difíceis, realça o branco e deixa um perfume suave. Seguro para tecidos brancos e lavagens do dia a dia.</p>
+                    </div>
+                </div>
+                <div class="menu-options" id="produto-1">
+                    <div class="option">
+                        <img class="produto-img" src="https://placehold.co/200x200" alt="produto">
+                        <h3 class="produto-title">Detergente Neutro</h3>
+                        <p class="produto-p">Limpeza delicada e eficaz. Remove gorduras sem agredir as mãos, ideal para utensílios e superfícies. Aroma suave e neutro.</p>
+                    </div>
+                    <div class="option">
+                        <img class="produto-img" src="https://placehold.co/200x200" alt="produto">
+                        <h3 class="produto-title">Detergente Limao</h3>
+                        <p class="produto-p">Limpeza poderosa com aroma cítrico de limão. Elimina gorduras, deixando utensílios brilhantes e com cheiro de frescor.</p>
+                    </div>
+                    <div class="option">
+                        <img class="produto-img" src="https://placehold.co/200x200" alt="produto">
+                        <h3 class="produto-title">Detergente Maca</h3>
+                        <p class="produto-p">Poder desengordurante com fragrância refrescante de maçã. Limpa profundamente, deixando um perfume agradável nas louças.</p>
+                    </div>
+                    <div class="option">
+                        <img class="produto-img" src="https://placehold.co/200x200" alt="produto">
+                        <h3 class="produto-title">Detergente coco</h3>
+                        <p class="produto-p">Desengordurante eficiente com fragrância suave de coco. Ideal para louças e superfícies, proporcionando limpeza e cuidado para as mãos.</p>
+                    </div>
+                </div>
+                <div class="menu-options" id="produto-2">
+                    <div class="option">
+                        <img class="produto-img" src="https://placehold.co/200x200" alt="produto">
+                        <h3 class="produto-title">Desinfetante Casa Limpa</h3>
+                        <p class="produto-p">Aroma suave e fresco que deixa os ambientes higienizados e perfumados. Elimina germes e bactérias, proporcionando sensação de limpeza prolongada.</p>
+                    </div>
+                    <div class="option">
+                        <img class="produto-img" src="https://placehold.co/200x200" alt="produto">
+                        <h3 class="produto-title">Desinfetante Lavanda</h3>
+                        <p class="produto-p">Perfume relaxante de lavanda aliado à ação bactericida. Ideal para deixar sua casa protegida e com fragrância agradável por mais tempo.</p>
+                    </div>
+                    <div class="option">
+                        <img class="produto-img" src="https://placehold.co/200x200" alt="produto">
+                        <h3 class="produto-title">Desinfetante Talco</h3>
+                        <p class="produto-p">Higienização completa com toque suave de talco. Remove odores e combate germes, deixando o ambiente limpo e aconchegante.</p>
+                    </div>
+                    <div class="option">
+                        <img class="produto-img" src="https://placehold.co/200x200" alt="produto">
+                        <h3 class="produto-title">Desinfetante Wedo</h3>
+                        <p class="produto-p">Limpeza profunda com fragrância envolvente. Elimina microrganismos, garantindo frescor duradouro em todos os cômodos.</p>
+                    </div>
+                    <div class="option">
+                        <img class="produto-img" src="https://placehold.co/200x200" alt="produto">
+                        <h3 class="produto-title">Desinfetante Eucalipto</h3>
+                        <p class="produto-p">Proteção e frescor natural de eucalipto. Combate germes e deixa o ambiente com aroma revitalizante e sensação de limpeza.</p>
+                    </div>
+                    <div class="option">
+                        <img class="produto-img" src="https://placehold.co/200x200" alt="produto">
+                        <h3 class="produto-title">Desinfetante Marine</h3>
+                        <p class="produto-p">Perfume leve e refrescante inspirado no mar. Desinfecção eficaz, eliminando odores e deixando o ambiente limpo e agradável.</p>
+                    </div>
+                </div>
+                <div class="menu-options" id="produto-3">
+                    <div class="option">
+                        <img class="produto-img" src="https://placehold.co/200x200" alt="produto">
+                        <h3 class="produto-title">Lava Autos</h3>
+                        <p class="produto-p">Limpeza eficiente e brilho intenso para seu veículo. Remove sujeiras sem agredir a pintura, deixando a superfície protegida e com acabamento impecável.</p>
+                    </div>
+                    <div class="option">
+                        <img class="produto-img" src="https://placehold.co/200x200" alt="produto">
+                        <h3 class="produto-title">Limpa Pneu</h3>
+                        <p class="produto-p">Renova e dá brilho aos pneus, deixando-os com aparência de novos. Protege contra rachaduras e garante efeito duradouro.</p>
+                    </div>
+                    <div class="option">
+                        <img class="produto-img" src="https://placehold.co/200x200" alt="produto">
+                        <h3 class="produto-title">Silicone</h3>
+                        <p class="produto-p">Proteção e brilho para painéis e superfícies plásticas. Realça a aparência, evita o ressecamento e deixa um aroma agradável no interior do veículo.</p>
+                    </div>
+                </div>
+                <div class="menu-options" id="produto-4">
+                    <div class="option">
+                        <img class="produto-img" src="https://placehold.co/200x200" alt="produto">
+                        <h3 class="produto-title">Limpador Perfumado concentrado Talco</h3>
+                        <p class="produto-p">Aroma suave e aconchegante de talco. Alto rendimento: 1L rende até 25L. Ideal para limpeza e perfumação prolongada de ambientes.</p>
+                    </div>
+                    <div class="option">
+                        <img class="produto-img" src="https://placehold.co/200x200" alt="produto">
+                        <h3 class="produto-title">Limpador Perfumado concentrado Casa Limpa</h3>
+                        <p class="produto-p">Fragrância fresca que deixa a sensação de casa recém-limpa. Poderoso contra sujeiras e econômico: 1L rende até 25L.</p>
+                    </div>
+                    <div class="option">
+                        <img class="produto-img" src="https://placehold.co/200x200" alt="produto">
+                        <h3 class="produto-title">Limpador Perfumado concentrado Eucalipto</h3>
+                        <p class="produto-p">Frescor natural de eucalipto com ação desinfetante. Perfuma, limpa e rende até 25L por litro diluído. Ideal para ambientes revitalizados.</p>
+                    </div>
+                </div>
+                <div class="btn-next"><i class="next fa-solid fa-arrow-right"></i></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <script src="js/menu-burguer.js"></script>
+    <script src="js/sidebar-produtos.js"></script>
+</body>
+</html>
