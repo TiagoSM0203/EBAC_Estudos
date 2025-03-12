@@ -381,7 +381,7 @@
     }
 }
 
-.container-produtos {
+.container-produtos, .container-ondeestamos {
     max-width: 90vw;
     margin: 80px auto;
     padding: 1rem;
@@ -429,6 +429,7 @@
     gap: 20px;
     font-size: 1em;
     transition: all .5s;
+    text-align: center;
 }
 
 .produtos-item i {
@@ -444,78 +445,91 @@
 .produtos-content {
     position: relative;
     width: 70%;
-    height: fit-content;
     padding: 0 40px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+}
+
+.carousel_conteiner {
+    width: 100%;
+    overflow: hidden;
 }
 
 .menu-options {
-    width: 100%;
-    overflow: hidden;
     display: none;
-    /* grid-template-columns: repeat(2, 1fr); */
-    gap: 50px;
+    justify-content: flex-start;
+    gap: 3vw;
     padding: 30px;
-    margin: 0 50px;
     background-color: hsl(85, 45%, 92%);
     border: 1px solid hsl(85, 38%, 75%);
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.btn {
+.btn, .btn-next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-    left: 10%;
-    z-index: 1;
+    z-index: 10;
+    background-color: hsl(85, 45%, 92%);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+.btn:hover, .btn-next:hover {
+    background-color: hsl(85, 38%, 75%);
+}
+
+.btn {
+    left: 50px;
 }
 
 .btn-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    right: 1%;
-    z-index: 2;
+    right: 50px;
 }
 
 .prev, .next {
     font-size: 1.5em;
+    color: #333;
 }
-
 
 .menu-options.show {
     display: flex;
 }
 
 .option {
-    height: 35vh;
+    width: calc(33.33% - 20px);
+    min-width: 29.6%;
+    height: 330px;
     display: flex;
+    /* margin: 0 1.8vw;
+    padding: 6.9vw; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 50px;
-    border-radius: 8px;
+    border-radius: 16px;
+    border: 1px solid hsl(85, 38%, 75%);;
     text-align: center;
-    background-color: white;
     color: white;
-    transition: all .3s ease;
-    animation: fadeIn 0.5s ease-out forwards;
+    transition: all .3s ease-in-out;
+    animation: fadeIn 0.5s ease-in-out forwards;
 }
 
 .produto-img {
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
+    max-height: 60%;
+    max-width: 60%;
 }
 
 .produto-title {
-    font-size: 1.2em;
-    color: #333;
+    font-size: 1.5em;
+    color: hsl(85, 32%, 55%);
     margin: 24px 0;
 }
 
@@ -544,9 +558,15 @@
     .menu-options {
         margin: 0;
         flex-direction: column;
+        align-items: center;
+    }
+
+    .btn, .btn-next {
+        display: none;
     }
 
     .option {
+        width: 90%;
         padding: 30px 0;
     }
 
@@ -569,6 +589,161 @@
 
     .produto-p {
         font-size: 14px;
+    }
+}
+
+.ondeestamos {
+    background-color: #aaf34a67;
+    border-radius: 0 0 30% 30%;
+    padding: 60px 0;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+    margin-bottom: 80px;
+}
+
+.ondeestamos-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    gap: 2.5rem;
+}
+
+.ondeestamos-title {
+    font-size: 3.5em;
+    text-align: center;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+.ondeestamos-p {
+    color: #333;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 16px;
+}
+
+.ondeestamos-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ondeestamos-mapa iframe {
+    border-radius: 24px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+.ondeestamos-img img {
+    width: 150px;
+    height: 150px;
+}
+
+@media (max-width: 999px) {
+
+    .ondeestamos {
+        border-radius: 0
+    }
+    .ondeestamos-content {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .ondeestamos-title {
+        font-size: 2.5em;
+    }
+
+    .ondeestamos-p {
+        font-size: 1.2em;
+    }
+
+    .ondeestamos-img img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .ondeestamos-mapa iframe {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 24px;
+    }
+}
+
+.footer {
+    background-color: #7AB928;
+    color: white;
+    padding: 100px 100px 30px 100px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    border-bottom: 2px solid #6ba81b    ;
+    padding-bottom: 24px;
+}
+
+.footer-info {
+    display: flex;
+    gap: 5rem;
+}
+
+.footer-item a {
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.insta {
+    margin-right: 8px;
+}
+
+.footer-item a:hover {
+    color: white;
+}
+
+.footer-title {
+    font-size: 1.5em;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.footer-p {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333;
+}
+
+.footer-copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 24px;
+}
+
+@media (max-width: 767px) {
+    .footer {
+        padding: 50px 50px 30px 50px;
+    }
+
+    .footer-info {
+        display: block;
+    }
+
+    .footer-item {
+        margin-bottom: 16px;
+    }
+
+    .footer-title {
+        font-size: 1.2em;
+    }
+
+    .footer-p {
+        font-size: 1em;
+    }
+
+    .footer-copy p {
+        text-align: center;
     }
 }
 
